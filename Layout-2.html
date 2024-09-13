@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, footer {
+            background-color: #8b8b8b;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .content-area {
+            display: flex;
+            flex: 1;
+        }
+
+        .menu {
+            background-color: #c7c7c7;
+            width: 20%;
+            padding: 10px;
+        }
+
+        .menu h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu ul {
+            display: flex; /* Alinha os itens do menu em uma linha */
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-right: 10px; /* Espaço entre os itens */
+            padding: 10px;
+            border: 1px solid #8b8b8b; /* Cria o "quadradinho" ao redor dos itens */
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Suaviza a transição ao passar o mouse */
+        }
+
+        .menu li:hover {
+            background-color: #e0e0e0; /* Muda a cor ao passar o mouse */
+        }
+
+        .content {
+            background-color: #e2e2e2;
+            width: 60%;
+            padding: 10px;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ads {
+            background-color: #c7c7c7;
+            width: 20%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinha os anúncios ao topo */
+        }
+
+        .ad {
+            background-color: #8b8b8b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px; /* Espaço entre os anúncios */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #555;
+            padding: 10px;
+            color: white;
+        }
+
+        nav button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botões movidos para cima do Header -->
+        <nav>
+            <a href="index.html"><button>1</button></a>
+            <a href="Layout-3.html"><button>2</button></a>
+            <button>03</button>
+            <button>04</button>
+            <button>05</button>
+        </nav>
+
+        <header>Header</header>
+
+        <div class="content-area">
+            <aside class="menu">
+                <h2>Menu</h2> <!-- Título do Menu -->
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <h2>Content</h2> <!-- Título do Conteúdo -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est provident, corrupti sint atque id cumque suscipit saepe odit dolores dignissimos fugiat totam nobis similique officiis dicta cupiditate illo deleniti</p>
+            </section>
+
+            <div class="ads">
+                <div class="ad">Ad</div>
+                <div class="ad">Ad</div>
+            </div>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

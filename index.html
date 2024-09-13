@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estiloooo.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #268b9c;
+            padding: 1rem;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .menu {
+            width: 20%;
+            background-color: #259397;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 1rem; 
+            padding: 1rem; 
+        }
+
+        article {
+            flex: 1;
+            padding: 1rem;
+            background-color: #64a7a7;
+            border: 2px solid #64a7a7; 
+            border-radius: 8px; 
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #268b9c;
+            padding: 1rem;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem;
+        }
+
+        .button-container a {
+            text-decoration: none;
+        }
+
+        .button-container button {
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            background-color: #259397;
+            color: #f6fafa;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #1a6f6f;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="Layout-2.html"><button>1</button></a>
+        <a href="Layout-3.html"><button>2</button></a>
+        <a href="pagina3.html"><button>3</button></a>
+        <a href="pagina4.html"><button>4</button></a>
+        <a href="pagina5.html"><button>5</button></a>
+    </div>
+    
+    <header>
+        <h1>Cabeçalho</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <article>
+                <h2>Artigo 1</h2>
+                
+            </article>
+            <article>
+                <h2>Artigo 2</h2>
+                
+            </article>
+        </div>
+        
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

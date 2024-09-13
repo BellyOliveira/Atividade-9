@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #444;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #c7c7c7;
+            padding: 10px;
+        }
+
+        .menu button {
+            background-color: #8b8b8b;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #999;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex: 1;
+            background-color: #e2e2e2;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .card-title {
+            background-color: #8b8b8b;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #8b8b8b;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-item {
+            background-color: #555;
+            padding: 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botões acima do header -->
+        <div class="nav-buttons">
+            <a href="index.html"><button>1</button></a>
+            <a href="Layout-2.html"><button>2</button></a>
+            <button>03</button>
+            <button>04</button>
+            <button>05</button>
+        </div>
+
+        <div class="menu">
+            <button>Menu 1</button>
+            <button>Menu 2</button>
+            <button>Menu 3</button>
+            <button>Menu 4</button>
+            <button>Menu 5</button>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <div class="card-title">Card title</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Omnis minima amet ex magni. Repellat facilis voluptate animi minima, facere voluptatem sunt quas ipsum laboriosam velit aliquid beatae! Doloribus, officiis vitae.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Card title</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Omnis minima amet ex magni. Repellat facilis voluptate animi minima, facere voluptatem sunt quas ipsum laboriosam velit aliquid beatae! Doloribus, officiis vitae.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Card title</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Omnis minima amet ex magni. Repellat facilis voluptate animi minima, facere voluptatem sunt quas ipsum laboriosam velit aliquid beatae! Doloribus, officiis vitae.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-item">Footer item </div>
+            <div class="footer-item">Footer item </div>
+        </footer>
+    </div>
+</body>
+</html>
